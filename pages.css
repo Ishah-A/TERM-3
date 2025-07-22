@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cal+Sans&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+    font-family: Roboto;
+    src: url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cal+Sans&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+}
 
 body {
     line-height: 1.6;
@@ -45,7 +49,7 @@ table {
 
 .hr1{
     border: 1px solid #931621;
-    border-radius: 1;
+    border-radius: 1px;
 }
 
 .heading{
@@ -86,12 +90,12 @@ body, header {
 }
 
 .left {
-    background-color: #ffffff;
+    background-color: #ffffffe7;
     border-color: #ffffff;
 }
 
 .right {
-    background-color: #ffffff;
+    background-color: #fffffff5;
     border-color: #ffffff;
     text-align: right;
 }
