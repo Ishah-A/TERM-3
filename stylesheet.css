@@ -359,11 +359,11 @@ svg {
 .dropbtn {
   background-color: #931621;
   color: white;
-  padding: 20px;
   font-size: 50px;
   border: none;
   border-radius: 20px;
-  width: 100px;
+  width: 120px;
+  height: 100px;
 }
 
 .dropdown-content {
