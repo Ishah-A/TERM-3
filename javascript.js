@@ -51,3 +51,20 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 images.forEach(img => observer.observe(img));
+
+
+
+//  FOR THE FADE ON THE NAVIGATION BAR  //
+let lastScrollY = window.scrollY;
+const nav = document.querySelector('.nav');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY) {
+    // Scrolling down → hide nav
+    nav.classList.add('hide');
+  } else {
+    // Scrolling up → show nav
+    nav.classList.remove('hide');
+  }
+  lastScrollY = window.scrollY;
+});
