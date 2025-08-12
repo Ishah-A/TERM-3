@@ -125,11 +125,19 @@ body, header {
     margin-top: 20px;
 }
 
-.galleryimage{
+.fade-image{
     width: 550px;
     height: auto;
     display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
+
+.fade-image.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 .back:hover {
     background-color: #e7e7e7;

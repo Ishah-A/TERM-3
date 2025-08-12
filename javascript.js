@@ -34,3 +34,20 @@ window.onload = function () {
         dots[slideIndex - 1].classList.add("active");
     }
 };
+
+
+const images = document.querySelectorAll('.fade-image');
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    } else {
+      entry.target.classList.remove('visible'); // fade out again when leaving view
+    }
+  });
+}, {
+  threshold: 0.1 // Trigger when 10% of the image is visible
+});
+
+images.forEach(img => observer.observe(img));
