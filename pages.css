@@ -2,6 +2,28 @@
 
     @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Cal+Sans&family=Lexend:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+    @media (max-width: 768px) {
+        .galleryheading {
+            font-size: 30px;
+            padding-left: 20px;
+        }
+    
+        .fade-image {
+            max-width: 90%;  /* Slight margins on mobile */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .galleryheading {
+            font-size: 24px;
+            padding-left: 10px;
+            text-align: center;
+        }
+    
+        .fade-image {
+            max-width: 100%;
+        }
+    }
 
 body {
     line-height: 1.6;
@@ -81,6 +103,15 @@ body, header {
     border-radius: 8px;
 }
 
+.column-main{
+    flex: 1; /* Equal width for both columns */
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-style: none;
+    border-radius: 8px;
+}
+
 .columntop{
     width: 1000px;
     background-color: #931621;
@@ -120,13 +151,14 @@ body, header {
 
 .image-row{
     display: flex;
+    flex-wrap: wrap; /* REMOVE THIS IF THINGS BREAK */
     justify-content: center;
-    gap: 40px; /* space between the two images */
+    gap: 20px; /* space between the two images */
     margin-top: 20px;
 }
 
 .fade-image{
-    width: 550px;
+    max-width: 25%;
     height: auto;
     display: inline-block;
     opacity: 0;
